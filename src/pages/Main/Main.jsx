@@ -1,12 +1,13 @@
-import styles from "Main.module.scss"
+import styles from './Main.module.scss';
+import Header from '../../components/Header/Header';
 
-const Main = () => {
-    console.log(styles);
-return (
-    <div>
-
+function Main() {
+  return (
+    <div>    
+      <Header />
+      Main
     </div>
-)
+  );
 }
 
-export default Main
+export default Main;
