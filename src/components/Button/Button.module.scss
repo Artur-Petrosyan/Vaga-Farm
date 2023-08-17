@@ -1,0 +1,22 @@
+$btnBackColor : #12724F;
+$btnFontColor : #FFFFFF;
+$btnPadding : '25px 37px 25px 37px';
+$fontSize : '18px';
+
+@mixin btnPrimary($btnBackColor, $BtnFontColor, $btnPadding, $fontSize) {
+    padding: $btnPadding;
+    background-color: $btnBackColor;
+    color: $btnFontColor ;
+    font-size: $fontSize;
+    font-weight: 400;
+    line-height: 21.6px;
+    border-radius: 14px;
+}
+
+.primary {
+    @include btnPrimary(#12724F, #FFFFFF, 25px 37px 25px 37px, 18px );
+}
+
+.secondary {
+    @include btnPrimary(#12724F, #FFFFFF, 25px 32px 25px 32px, 18px );
+}
