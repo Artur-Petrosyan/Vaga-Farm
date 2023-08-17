@@ -1,0 +1,11 @@
+$weight : 100;
+$fontSize : 16px;
+$color : #1E1E1E;
+$lineHeight : 19.2px;
+
+.p { 
+    font-weight: $weight;
+    font-size: $fontSize;
+    color : $color;
+    line-height: $lineHeight;
+}
