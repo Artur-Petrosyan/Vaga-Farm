@@ -3,12 +3,14 @@ import { NavLink } from 'react-router-dom';
 import NavBar from './Navigation/Navigation';
 import styles from './Header.module.scss'
 const Header = () => {
-return (
-    <div>
-        <img src={Logo} alt="Logo" />
-        <NavBar />
-    </div>
-)
+    return (
+        <header className={styles.header}>
+            <NavLink to='/home' className={styles.logo}>
+                <img src={Logo} alt="Logo" />
+            </NavLink>
+            <NavBar />
+        </header>
+    )
 }
 
 export default Header
