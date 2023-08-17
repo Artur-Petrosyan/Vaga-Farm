@@ -1,6 +1,8 @@
-const Button = ({children,...rest}) => {
+import styles from './Button.module.scss'
+
+const Button = ({children,variant,...rest}) => {
 return (
-    <button>{children}</button>
+    <button {...rest} className={styles[variant]}>{children}</button>
 )
 }
 
