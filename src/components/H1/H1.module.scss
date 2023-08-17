@@ -1,0 +1,11 @@
+$fontSize : 40px;
+$color : #12724F;
+$lineHeight : 48px;
+$weight : 700;
+
+.h1 {
+    font-size: $fontSize;
+    color: $color;
+    line-height: $lineHeight;
+    font-weight: $weight;
+}
