@@ -1,11 +1,26 @@
 $weight : 400;
 $fontSize : 16px;
-$color : #1E1E1E;
+$defColor : #1E1E1E;
 $lineHeight : 19.2px;
-
-.p { 
+$boldWeight : 700;
+$cardColor : #12724F;   
+.default { 
     font-weight: $weight;
     font-size: $fontSize;
-    color : $color;
+    color : $defColor;
+    line-height: $lineHeight;
+}
+
+.bold {
+    font-size: $fontSize;
+    color : $defColor;
+    line-height: $lineHeight;
+    font-weight: $boldWeight;
+}
+
+.card { 
+    font-weight: $weight;
+    font-size: $fontSize;
+    color : $cardColor;
     line-height: $lineHeight;
 }
