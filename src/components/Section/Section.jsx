@@ -2,7 +2,6 @@ import styles from "./Section.module.scss"
 import H1 from '../H1/H1'
 import P from '../P/P'
 import Button from '../Button/Button'
-import Card from '../Card/Card'
 const Section = ({ h1, p, button, img, eclipse }) => {
     return (
         <section className={styles.container}>

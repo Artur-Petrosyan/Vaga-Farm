@@ -5,6 +5,7 @@ import layers from '../components/Card/assets/icons/layer.svg'
 import pcs from '../components/Card/assets/icons/pcs.svg'
 
 export const getItems = () => {
+    console.log("WORKED");
     return (
         [
             {
