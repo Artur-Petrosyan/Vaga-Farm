@@ -3,7 +3,7 @@ import H1 from '../H1/H1'
 import P from '../P/P'
 import Button from '../Button/Button'
 import Card from '../Card/Card'
-const Section = ({ h1, p, button, img ,eclipse}) => {
+const Section = ({ h1, p, button, img, eclipse }) => {
     return (
         <section className={styles.container}>
             <div className={styles.content}>
@@ -20,10 +20,11 @@ const Section = ({ h1, p, button, img ,eclipse}) => {
                 </div>
                 <div className={styles.right_part}>
                     <img src={img} alt="fabrikaImg" />
+                    <div className={styles.eclipse}>
+                        <img src={eclipse} alt="eclipse" />
+                    </div>
                 </div>
-                <div className={styles.eclipse}>
-                    <img src={eclipse} alt="eclipse" />
-                </div>
+
             </div>
         </section>
     )
