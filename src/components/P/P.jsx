@@ -1,7 +1,7 @@
 import styles from "./P.module.scss"
-const P = ({children}) => {
-return (
-    <p className={styles.p}>{children}</p>
+const P = ({children,variant}) => {
+    return (
+    <p className={styles[variant]}>{children}</p>
 )
 }
 

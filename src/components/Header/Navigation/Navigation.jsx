@@ -19,12 +19,12 @@ const NavBar = () => {
     }
     return (
         <nav className='navbar'>
-            <NavLink to='home' className={isActive}>ԳԼԽԱՎՈՐ</NavLink>
-            <NavLink to='about' className={isActive}>ՄԵՐ ՄԱՍԻՆ</NavLink>
-            <NavLink to='products' className={isActive}>ԱՐՏԱԴՐԱՆՔ</NavLink>
-            <NavLink to='services' className={isActive}>ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</NavLink>
-            <NavLink to='partners' className={isActive}>ԳՈՐԾԸՆԿԵՐՆԵՐ</NavLink>
-            <NavLink to='callback' className={isActive}>ՀԵՏԱԴԱՐՁ ԿԱՊ</NavLink>
+            <NavLink to='/' className={isActive}>ԳԼԽԱՎՈՐ</NavLink>
+            <NavLink to='/about' className={isActive}>ՄԵՐ ՄԱՍԻՆ</NavLink>
+            <NavLink to='/products' className={isActive}>ԱՐՏԱԴՐԱՆՔ</NavLink>
+            <NavLink to='/services' className={isActive}>ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</NavLink>
+            <NavLink to='/partners' className={isActive}>ԳՈՐԾԸՆԿԵՐՆԵՐ</NavLink>
+            <NavLink to='/callback' className={isActive}>ՀԵՏԱԴԱՐՁ ԿԱՊ</NavLink>
             <div className={styles.flags} onClick={handleOpen}>
                 {
                     open ?
