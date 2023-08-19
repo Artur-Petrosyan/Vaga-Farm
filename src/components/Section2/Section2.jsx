@@ -4,6 +4,7 @@ import H1 from "../H1/H1";
 import { getItems } from '../../utils/storeproducts'
 import { useCallback, useEffect, useState } from "react";
 import Button from "../Button/Button";
+import Input from "../Input/Input";
 const Section2 = () => {
     const [data, setData] = useState([])
     const [state, setState] = useState(false)

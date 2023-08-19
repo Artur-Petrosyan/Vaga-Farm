@@ -2,6 +2,7 @@ import styles from "./Section.module.scss"
 import H1 from '../H1/H1'
 import P from '../P/P'
 import Button from '../Button/Button'
+import Input from "../Input/Input"
 const Section = ({ h1, p, button, img, eclipse }) => {
     return (
         <section className={styles.container}>
@@ -23,7 +24,6 @@ const Section = ({ h1, p, button, img, eclipse }) => {
                         <img src={eclipse} alt="eclipse" />
                     </div>
                 </div>
-
             </div>
         </section>
     )
