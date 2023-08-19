@@ -1,6 +1,7 @@
 import Main from "./pages/Main/Main"
 import { Route,Routes } from "react-router-dom"
 import Header from "./components/Header/Header"
+import './index.scss'
 const App = () => {
 
   return (

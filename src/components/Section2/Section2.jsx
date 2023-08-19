@@ -1,14 +1,17 @@
 import Card from "../Card/Card";
 import styles from './Section2.module.scss'
 import H1 from "../H1/H1";
-import { getItems } from '../../utils/storeItems'
-import { useEffect, useState } from "react";
+import { getItems } from '../../utils/storeproducts'
+import { useCallback, useEffect, useState } from "react";
 import Button from "../Button/Button";
 const Section2 = () => {
     const [data, setData] = useState([])
+    const [state, setState] = useState(false)
+    const products = useCallback(() => { return getItems() }, [])
     useEffect(() => {
-        setData(getItems())
+        setData(products())
     }, [])
+
     return (
         <section className={styles.container}>
             <div className={styles.content}>
@@ -18,7 +21,19 @@ const Section2 = () => {
                     </H1>
                 </div>
                 <div className={styles.cards}>
-                    <Card data={data} />
+                    {data.map((item) =>
+                        <Card
+                            key={item.id}
+                            id={item.id}    
+                            image={item.image}
+                            text={item.text}
+                            arrowLeftRight={item.arrowLeftRight}
+                            arrowTopImg={item.arrowTopImg}
+                            sizes={item.sizes}
+                            layers={item.layers}
+                            pcs={item.pcs}
+                        />
+                    )}
                 </div>
                 <div className={styles.button}>
                     <Button variant={"primary"}>

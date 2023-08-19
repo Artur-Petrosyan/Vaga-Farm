@@ -1,18 +1,9 @@
-$cardBackground : #DDDDDD;
 $cardHeight : 482px;
-
-
-
+@import '../../index.scss';
+.card_partner {
+    
+}
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $cardBackground;
-    padding: 87px 40px 22px 40px;
-    border-radius: 14px;
-    // max-width: 434px;
-    max-height: 482px;
     min-width: 340px;
     width: 31.9%; 
     margin-bottom: 71px;
