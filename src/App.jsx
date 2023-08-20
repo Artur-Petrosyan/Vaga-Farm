@@ -4,6 +4,8 @@ import { Route, Routes } from "react-router-dom"
 import Header from "./components/Header/Header"
 import './index.scss'
 import Footer from "./components/Footer/Footer"
+import BackCall from "./pages/BackCall/BackCall"
+import Services from "./pages/Services/Services"
 const App = () => {
 
   return (
@@ -13,9 +15,9 @@ const App = () => {
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />}/>
         <Route path="/products" />
-        <Route path="/services" />
+        <Route path="/services" element={<Services />}/>
         <Route path="/partners" />
-        <Route path="/callback" />
+        <Route path="/callback" element={<BackCall />}/>
       </Routes>
       <Footer />
     </div>

@@ -3,10 +3,12 @@ import H1 from '../H1/H1'
 import P from '../P/P'
 import Button from '../Button/Button'
 import Input from "../Input/Input"
-const Section = ({ h1, p, button, img, eclipse }) => {
+import classNames from "classnames/bind"
+const cx = classNames.bind(styles)
+const Section = ({ h1, p, button, img, eclipse, reverse }) => {
     return (
         <section className={styles.container}>
-            <div className={styles.content}>
+            <div className={cx('content',{reverse : reverse })} >
                 <div className={styles.left_part}>
                     <H1>
                         {h1}
