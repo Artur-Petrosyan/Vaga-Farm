@@ -1,0 +1,47 @@
+.content {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .top {
+        margin-bottom: 78px;
+    }
+
+    .imgText {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 150px;
+
+        .topText {
+            width: 40%;
+            max-width: 629px;
+            min-width: 300px;
+
+        }
+
+        .bottomText {
+            width: 40%;
+            max-width: 629px;
+            min-width: 300px;
+            margin-right: 60px;
+            margin-bottom: 30px;
+        }
+
+        .topimg {
+            height: 363px;
+            max-width: 50%;
+            min-width: 300px;
+            margin-right: 60px;
+            margin-bottom: 30px;
+        }
+
+        .bottomimg {
+            height: 363px;
+            max-width: 50%;
+            min-width: 300px;
+        }
+    }
+}
