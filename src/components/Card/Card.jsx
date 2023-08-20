@@ -2,6 +2,7 @@ import styles from "./Card.module.scss"
 import P from '../P/P'
 import Button from '../Button/Button'
 import { memo } from "react";
+import { useNavigate } from "react-router-dom";
 const Card = memo(({
     id,
     image, text,
@@ -52,7 +53,7 @@ const Card = memo(({
                 </div>
 
                 <div className={styles.card_button}>
-                    <Button variant={'secondary'}>
+                    <Button variant={'secondary'} >
                         ՏԵՍՆԵԼ ԱվԵԼԻՆ
                     </Button>
                 </div>
