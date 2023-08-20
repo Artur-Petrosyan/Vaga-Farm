@@ -3,7 +3,7 @@ import Button from '../Button/Button'
 import { useState } from 'react'
 import styles from "./Form.module.scss"
 import H1 from '../H1/H1'
-const Form = ({ h1 }) => {
+const Form = ({ h1, toggleModal }) => {
     const [user, setUser] = useState({
         name: '',
         email: '',
@@ -14,8 +14,11 @@ const Form = ({ h1 }) => {
     }
     const onClick = (e) => {
         e.stopPropagation()
+        toggleModal()
         setUser({ name: '', email: '', message: '' })
+        // ---axios.post
     }
+
     const onSubmit = (e) => {
         e.preventDefault()
     }
@@ -29,11 +32,14 @@ const Form = ({ h1 }) => {
                 placeholder={'Անուն'}
                 name={'name'}
                 onChange={onChange}
+                value={user.name}
             />
             <Input
                 type={'email'}
                 placeholder={'Էլ․հասցե'}
                 name={'email'}
+                value={user.email}
+
                 onChange={onChange}
             />
             <div className={styles.text_area}>
@@ -42,14 +48,17 @@ const Form = ({ h1 }) => {
                     placeholder={'Հաղորդագրություն'}
                     name={'message'}
                     onChange={onChange}
+                    value={user.message}
+
                 />
             </div>
             <Button variant={'primary'}
                 onClick={onClick}
+                disabled={!user.name || !user.email}
             >
                 ՈՒՂԱՐԿԵԼ
             </Button>
-        </form>
+        </form >
     )
 }
 export default Form;

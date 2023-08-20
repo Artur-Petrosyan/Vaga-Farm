@@ -15,7 +15,7 @@ import Section5 from '../../components/Section5/Section5';
 
 
 
-function Main() {
+function Main({ toggleModal }) {
   return (
     <main>
       <Section
@@ -24,6 +24,7 @@ function Main() {
         p={topSectionP}
         img={fabrika}
         eclipse={eclipse}
+        toggleModal={toggleModal}
       />
       <Section2 />
       <Section3
@@ -34,7 +35,7 @@ function Main() {
         eclipse={eclipse}
       />
       <Section4 />
-      <Section5 />
+      <Section5 toggleModal={toggleModal}/>
     </main>
   );
 }

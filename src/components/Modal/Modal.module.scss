@@ -1,0 +1,34 @@
+.modal {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #6E9C9FF2;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 148px 100px 148px;
+        position: relative;
+        width: 800px;
+        min-width: 500px;
+        height: 600px;
+        background-color: #F4F9FF;
+        opacity: 1;
+        border-radius: 14px;
+    }
+
+    .close {
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+}

@@ -5,6 +5,7 @@ import { getItems } from '../../utils/storeproducts'
 import { useCallback, useEffect, useState } from "react";
 import Button from "../Button/Button";
 import Input from "../Input/Input";
+import { useNavigate } from "react-router-dom";
 const Section2 = () => {
     const [data, setData] = useState([])
     const [state, setState] = useState(false)
@@ -12,7 +13,7 @@ const Section2 = () => {
     useEffect(() => {
         setData(products())
     }, [])
-
+const navigate = useNavigate()
     return (
         <section className={styles.container}>
             <div className={styles.content}>
@@ -37,7 +38,7 @@ const Section2 = () => {
                     )}
                 </div>
                 <div className={styles.button}>
-                    <Button variant={"primary"}>
+                    <Button variant={"primary"} onClick={() => navigate('/products')}>
                         ՏԵՍՆԵԼ ԱՄԲՈՂՋԸ
                     </Button>
                 </div>
