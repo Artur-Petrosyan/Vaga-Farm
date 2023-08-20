@@ -7,13 +7,14 @@ $containerPadding : 0px 187px 0 75px;
     align-items: center;
     background-color: #F4F9FF;
     padding: $containerPadding;
-
-    .content {
+        .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         width: 100%;
         height: 100%;
+
 
         .left_part {
             h1 {
@@ -26,22 +27,23 @@ $containerPadding : 0px 187px 0 75px;
 
             max-width: 35.1%;
             margin-right: 162px;
+            min-width: 400px;
         }
-
-        .right_part {
-            min-width: 500px;
-            z-index: 300;
-            position: relative;
-
-            .eclipse {
-                position: absolute;
-                right: -180px;
-                bottom: -180px;
-                z-index: -1;
-            }
-        }
-
-
     }
+
+    .right_part {
+        min-width: 400px;
+        max-width: 700px;
+        z-index: 300;
+        position: relative;
+
+        .eclipse {
+            position: absolute;
+            right: -180px;
+            bottom: -180px;
+            z-index: -1;
+        }
+    }
+
 
 }
