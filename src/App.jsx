@@ -6,6 +6,7 @@ import './index.scss'
 import Footer from "./components/Footer/Footer"
 import BackCall from "./pages/BackCall/BackCall"
 import Services from "./pages/Services/Services"
+import Partners from "./pages/Partners/Partners"
 const App = () => {
 
   return (
@@ -16,7 +17,7 @@ const App = () => {
         <Route path="/about" element={<About />}/>
         <Route path="/products" />
         <Route path="/services" element={<Services />}/>
-        <Route path="/partners" />
+        <Route path="/partners" element={<Partners />} />
         <Route path="/callback" element={<BackCall />}/>
       </Routes>
       <Footer />
