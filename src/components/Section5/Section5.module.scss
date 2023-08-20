@@ -1,0 +1,32 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 115px;
+    justify-content: space-between;
+
+    .left_part {
+        display: flex;
+        flex-direction: column;
+        padding-top: 93px;
+        max-width: 550px;
+        min-width: 360px;
+        .section_text{
+            margin-bottom: 130px;
+        }
+    }
+
+    .right_part {
+        max-width: 40%;
+        min-width: 360px;
+    }
+    .map {
+        position: relative;
+        margin-bottom: 160px;
+        img {
+            position: absolute;
+            bottom: -136px;
+            left: -60px;
+            z-index: -1;
+        }
+    }
+}
