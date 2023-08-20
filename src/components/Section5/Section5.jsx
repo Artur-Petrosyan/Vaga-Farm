@@ -4,7 +4,8 @@ import eclipse from './assets/icons/ellipse.svg'
 import { section5P } from "../../utils/text"
 import Map from "../Map/Map"
 import Form from "../Form/Form"
-const Section5 = () => {
+
+const Section5 = ({toggleModal}) => {
     return (
         <section className="container">
             <div className={styles.content}>
@@ -20,7 +21,7 @@ const Section5 = () => {
                     </div>
                 </div>
                 <div className={styles.right_part}>
-                    <Form h1={'ԿԱՊՆՎԵՔ ՄԵԶ ՀԵՏ ՀԻՄԱ'}/>
+                    <Form h1={'ԿԱՊՆՎԵՔ ՄԵԶ ՀԵՏ ՀԻՄԱ'} toggleModal={toggleModal}/>
                 </div>
             </div>
         </section>

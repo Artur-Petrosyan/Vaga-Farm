@@ -12,7 +12,6 @@ const Card = memo(({
     pcs,
     partners
 }) => {
-    console.log(partners);
     return (
         image && text && arrowLeftRight && arrowTopImg && sizes && layers && pcs
             ?
