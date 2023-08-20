@@ -3,7 +3,9 @@ import { servicesToptext } from "../../utils/text";
 import topImg from './assets/images/topImg.svg'
 import bottomImg from './assets/images/bottomImg.svg'
 import eclipse from './assets/images/eclipse.svg'
+import { useSearchParams } from "react-router-dom";
 const Services = () => {
+ 
     return (
      <>
         <Section

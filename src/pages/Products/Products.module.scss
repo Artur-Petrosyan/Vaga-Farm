@@ -1,0 +1,30 @@
+$fz : '14px';
+$active : #12724F;
+$pending : #000000;
+
+.default {
+    color: $pending;
+}
+
+.active {
+    color: $active;
+}
+
+
+
+.ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 112px;
+
+    .li {
+        margin-right: 15px;
+        cursor: pointer;
+    }
+}
+
+.store_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
