@@ -3,24 +3,37 @@ $fontSize : 16px;
 $defColor : #1E1E1E;
 $lineHeight : 19.2px;
 $boldWeight : 700;
-$cardColor : #12724F;   
-.default { 
+$cardColor : #12724F;
+// ----------FOTER P-------- 
+$ftSize : 12.37px;
+$fLh : 14.85px;
+$fFW : 700;
+$color : #FFFFFF;
+
+.default {
     font-weight: $weight;
     font-size: $fontSize;
-    color : $defColor;
+    color: $defColor;
     line-height: $lineHeight;
+}
+
+.footer_p {
+    color: $color;
+    font-size: $ftSize;
+    font-weight: $fFW ;
+    line-height: $fLh;
 }
 
 .bold {
     font-size: $fontSize;
-    color : $defColor;
+    color: $defColor;
     line-height: $lineHeight;
     font-weight: $boldWeight;
 }
 
-.card { 
+.card {
     font-weight: $weight;
     font-size: $fontSize;
-    color : $cardColor;
+    color: $cardColor;
     line-height: $lineHeight;
 }

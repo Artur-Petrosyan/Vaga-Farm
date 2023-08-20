@@ -3,14 +3,17 @@
     flex-wrap: wrap;
     padding-top: 115px;
     justify-content: space-between;
+    padding-bottom: 180px;
 
     .left_part {
         display: flex;
         flex-direction: column;
         padding-top: 93px;
-        max-width: 550px;
         min-width: 360px;
-        .section_text{
+        width: 40%;
+        margin-right: 50px;
+
+        .section_text {
             margin-bottom: 130px;
         }
     }
@@ -19,9 +22,11 @@
         max-width: 40%;
         min-width: 360px;
     }
+
     .map {
         position: relative;
         margin-bottom: 160px;
+
         img {
             position: absolute;
             bottom: -136px;
