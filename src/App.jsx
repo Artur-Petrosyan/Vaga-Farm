@@ -1,4 +1,5 @@
 import Main from "./pages/Main/Main"
+import About from './pages/About/About'
 import { Route, Routes } from "react-router-dom"
 import Header from "./components/Header/Header"
 import './index.scss'
@@ -10,7 +11,7 @@ const App = () => {
       <Header />
       <Routes >
         <Route path="/" element={<Main />} />
-        <Route path="/about" />
+        <Route path="/about" element={<About />}/>
         <Route path="/products" />
         <Route path="/services" />
         <Route path="/partners" />
