@@ -7,7 +7,8 @@ $containerPadding : 0px 187px 0 75px;
     align-items: center;
     background-color: #F4F9FF;
     padding: $containerPadding;
-        .content {
+
+    .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -30,13 +31,14 @@ $containerPadding : 0px 187px 0 75px;
             min-width: 300px;
             margin-bottom: 50px;
         }
+
         .right_part {
             min-width: 300px;
             max-width: 500px;
             margin-bottom: 200px;
             z-index: 300;
             position: relative;
-    
+
             .eclipse {
                 position: absolute;
                 right: -180px;
@@ -46,47 +48,56 @@ $containerPadding : 0px 187px 0 75px;
         }
     }
 
-    
+
 
 
 }
 
 .reverse {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
-        width: 100%;
-        height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100%;
 
 
-        .left_part {
-            h1 {
-                margin-bottom: 39px;
-            }
-
-            p {
-                margin-bottom: 55px;
-            }
-
-            max-width: 35.1%;
-            margin-right: 30px;
-            min-width: 300px;
-            margin-bottom: 50px;
+    .left_part {
+        h1 {
+            margin-bottom: 39px;
         }
-        .right_part {
-            min-width: 300px;
-            max-width: 500px;
-            margin-bottom: 200px;
-            z-index: 300;
-            position: relative;
-    
-            .eclipse {
-                position: absolute;
-                right: 180px;
-                bottom: -180px;
-                z-index: -1;
-            }
+
+        p {
+            margin-bottom: 55px;
+        }
+        max-width: 35.1%;
+        margin-right: 30px;
+        min-width: 300px;
+        margin-bottom: 50px;
+    }
+
+    .right_part {
+        min-width: 300px;
+        max-width: 500px;
+        margin-bottom: 200px;
+        z-index: 300;
+        position: relative;
+
+        .eclipse {
+            position: absolute;
+            right: 180px;
+            bottom: -180px;
+            z-index: -1;
         }
     }
+}
+
+@media (max-width : 1092px) {
+    .container {
+        .content {
+                justify-content: center;
+        }
+
+    }
+}

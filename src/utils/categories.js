@@ -1,6 +1,6 @@
 export const categories = [
     {
-        id: 1, name: "Բինտեր"
+        id: 1, name: "ԲԻՆՏԵՐ"
     },
     {
         id: 2, name: "ԹԱՆՁԻֆՆԵՐ"

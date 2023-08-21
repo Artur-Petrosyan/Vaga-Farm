@@ -11,7 +11,9 @@ import twitter from './assets/icons/twitter.svg'
 import footerLogo from './assets/icons/footerLogo.svg'
 import { productNames } from '../../utils/productsNames'
 import { useEffect, useState } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
 const Footer = () => {
+    const navigate = useNavigate()
     const [data, setData] = useState([])
     const getProducts = () => {
         setData(productNames)
@@ -23,13 +25,13 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className="container">
                 <div className={styles.content}>
-                    <div className={styles.logo}>
+                    <div className={styles.logo} onClick={() => navigate('/')}>
                         <img src={footerLogo} alt="logo" />
                     </div>
                     <div className={styles.product}>
                         <Products productsNames={data} />
                     </div>
-                    <div className={styles.call}>
+                    <div className={styles.call} onClick={() => navigate('/callback')}>
                         <div className={styles.h3}>
                             <H3>ԿԱՊ ՄԵԶ ՀԵՏ</H3>
                         </div>

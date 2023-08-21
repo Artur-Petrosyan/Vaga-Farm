@@ -3,7 +3,10 @@ import P from "../P/P"
 import sucsess from './assets/icons/sucsess.svg'
 import close from './assets/icons/close.svg'
 import styles from './Modal.module.scss'
-const Modal = ({ toggleModal }) => {
+import {Context} from '../../App'
+import { useContext } from "react"
+const Modal = () => {
+    const {toggleModal} = useContext(Context)
     return (
         <div className={styles.modal}>
             <div className={styles.content}>

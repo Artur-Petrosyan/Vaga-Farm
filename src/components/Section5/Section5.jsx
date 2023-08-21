@@ -4,8 +4,11 @@ import eclipse from './assets/icons/ellipse.svg'
 import { section5P } from "../../utils/text"
 import Map from "../Map/Map"
 import Form from "../Form/Form"
+import { Context } from '../../App'
+import { useContext } from "react"
 
-const Section5 = ({toggleModal}) => {
+const Section5 = ({ }) => {
+    const { toggleModal } = useContext(Context)
     return (
         <section className="container">
             <div className={styles.content}>
@@ -21,7 +24,7 @@ const Section5 = ({toggleModal}) => {
                     </div>
                 </div>
                 <div className={styles.right_part}>
-                    <Form h1={'ԿԱՊՆՎԵՔ ՄԵԶ ՀԵՏ ՀԻՄԱ'} toggleModal={toggleModal}/>
+                    <Form h1={'ԿԱՊՆՎԵՔ ՄԵԶ ՀԵՏ ՀԻՄԱ'} toggleModal={toggleModal} />
                 </div>
             </div>
         </section>

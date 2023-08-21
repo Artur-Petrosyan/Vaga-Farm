@@ -4,7 +4,9 @@ import styles from './Section4.module.scss'
 import { partners } from "../../utils/partners";
 import { useEffect, useState } from "react";
 import Card from "../Card/Card";
+import { useNavigate } from "react-router-dom";
 const Section4 = () => {
+    const navigate = useNavigate()
     const [data, setData] = useState([])
     const getPartners = () => {
         return partners
@@ -24,7 +26,7 @@ const Section4 = () => {
                         {data.map((item) => <Card key={item.id} partners={item} />)}
                 </div>
                 <div className={styles.button}>
-                    <Button variant={'primary'}>
+                    <Button variant={'primary'} onClick={() => navigate('/partners')}>
                         ՏԵՍՆԵԼ ԱՄԲՈՂՋԸ
                     </Button>
                 </div>
