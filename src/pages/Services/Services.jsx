@@ -1,10 +1,14 @@
 import Section from "../../components/Section/Section";
-import { servicesToptext } from "../../utils/text";
+
+import { Context } from "../../App";
+import { useContext } from "react";
+
 import topImg from './assets/images/topImg.svg'
 import bottomImg from './assets/images/bottomImg.svg'
 import eclipse from './assets/images/eclipse.svg'
-import { Context } from "../../App";
-import { useContext } from "react";
+
+import { servicesToptext } from "../../utils/text";
+
 const Services = () => {
  const {toggleOrderACall} = useContext(Context)
     return (

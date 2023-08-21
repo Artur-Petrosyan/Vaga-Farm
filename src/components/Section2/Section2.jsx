@@ -1,19 +1,30 @@
 import Card from "../Card/Card";
-import styles from './Section2.module.scss'
 import H1 from "../H1/H1";
+import Button from "../Button/Button";
+
 import { getItems } from '../../utils/storeproducts'
 import { useCallback, useEffect, useState } from "react";
-import Button from "../Button/Button";
-import Input from "../Input/Input";
 import { useNavigate } from "react-router-dom";
+
+
+import styles from './Section2.module.scss'
+
+
 const Section2 = () => {
     const [data, setData] = useState([])
+
     const [state, setState] = useState(false)
+
     const products = useCallback(() => { return getItems() }, [])
+
     useEffect(() => {
+
         setData(products())
+
     }, [])
-const navigate = useNavigate()
+
+    const navigate = useNavigate()
+    
     return (
         <section className={styles.container}>
             <div className={styles.content}>
@@ -23,10 +34,10 @@ const navigate = useNavigate()
                     </H1>
                 </div>
                 <div className={styles.cards}>
-                {data.map((item) =>
+                    {data.map((item) =>
                         <Card
                             key={item.id}
-                            id={item.id}    
+                            id={item.id}
                             image={item.image}
                             text={item.text}
                             arrowLeftRight={item.arrowLeftRight}
@@ -34,7 +45,7 @@ const navigate = useNavigate()
                             sizes={item.sizes}
                             layers={item.layers}
                             pcs={item.pcs}
-                            onClick={() => navigate(`products/${item.id}`)}
+                            onClick={() => navigate(`products/${item.name}/${item.id}`)}
                         />
                     )}
                 </div>

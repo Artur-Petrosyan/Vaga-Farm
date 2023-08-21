@@ -1,10 +1,14 @@
-import styles from './Products.module.scss'
-import { categories, } from '../../utils/categories'
-import { allStoreItems } from '../../utils/allStoreItems'
-import { useEffect, useRef, useState } from 'react'
 import Card from '../../components/Card/Card'
-import FiltredProducts from './SingleProduct'
+
+import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+
+import { categories, } from '../../utils/categories'
+import FiltredProducts from './SingleProduct'
+import { allStoreItems } from '../../utils/allStoreItems'
+
+import styles from './Products.module.scss'
+
 const Products = () => {
     const [categoryName, setCategoryName] = useState('ԲԻՆՏԵՐ')
     const [storeItems, setStoreItems] = useState([])

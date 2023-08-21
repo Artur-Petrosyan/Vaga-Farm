@@ -1,13 +1,19 @@
-import styles from './Navigation.module.scss'
-import { NavLink } from 'react-router-dom';
 import armeniaFlag from '../../../assets/icons/armenia.svg'
 import usFlag from '../../../assets/icons/united-states.png'
+
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+
+import styles from './Navigation.module.scss'
 import classNames from 'classnames/bind';
+
 const cx = classNames.bind(styles)
+
 const NavBar = () => {
     const [open, setOpen] = useState(false)
+
     const [language,setLanguage] = useState('armenian')
+    
     const handleOpen = () => {
         setOpen(!open)
     }

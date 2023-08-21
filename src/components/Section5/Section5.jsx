@@ -1,11 +1,15 @@
-import styles from "./Section5.module.scss"
 import P from '../P/P'
-import eclipse from './assets/icons/ellipse.svg'
-import { section5P } from "../../utils/text"
 import Map from "../Map/Map"
 import Form from "../Form/Form"
+
+import eclipse from './assets/icons/ellipse.svg'
+
 import { Context } from '../../App'
 import { useContext } from "react"
+
+import { section5P } from "../../utils/text"
+
+import styles from "./Section5.module.scss"
 
 const Section5 = ({ }) => {
     const { toggleModal } = useContext(Context)

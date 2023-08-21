@@ -1,7 +1,12 @@
-import styles from "./Partners.module.scss"
 import Card from '../../components/Card/Card'
-import { partners } from "../../utils/partners"
+
 import { useEffect, useState } from "react"
+
+import { partners } from "../../utils/partners"
+
+
+import styles from "./Partners.module.scss"
+
 const Partners = () => {
     const [data, setData] = useState([])
     const getPartners = () => {

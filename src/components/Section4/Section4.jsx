@@ -1,10 +1,13 @@
 import H1 from "../H1/H1";
 import Button from '../Button/Button'
-import styles from './Section4.module.scss'
+import Card from "../Card/Card";
+
 import { partners } from "../../utils/partners";
 import { useEffect, useState } from "react";
-import Card from "../Card/Card";
 import { useNavigate } from "react-router-dom";
+
+import styles from './Section4.module.scss'
+
 const Section4 = () => {
     const navigate = useNavigate()
     const [data, setData] = useState([])

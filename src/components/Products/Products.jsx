@@ -1,6 +1,9 @@
-import { useNavigate } from 'react-router-dom'
 import H3 from '../H3/H3'
+
+import { useNavigate } from 'react-router-dom'
+
 import styles from './Products.module.scss'
+
 const Products = ({ productsNames }) => {
     const navigate = useNavigate()
     return (

@@ -1,7 +1,7 @@
-import Products from '../Products/Products'
-import styles from './Footer.module.scss'
 import H3 from '../H3/H3'
 import P from "../P/P"
+import Products from '../Products/Products'
+
 import call from './assets/icons/call.svg'
 import email from './assets/icons/email.svg'
 import location from './assets/icons/location.svg'
@@ -9,9 +9,13 @@ import instagram from './assets/icons/instagram.svg'
 import facebook from './assets/icons/facebook.svg'
 import twitter from './assets/icons/twitter.svg'
 import footerLogo from './assets/icons/footerLogo.svg'
+
 import { productNames } from '../../utils/productsNames'
 import { useEffect, useState } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
+import {  useNavigate } from 'react-router-dom'
+
+import styles from './Footer.module.scss'
+
 const Footer = () => {
     const navigate = useNavigate()
     const [data, setData] = useState([])

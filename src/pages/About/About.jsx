@@ -1,8 +1,11 @@
 import H1 from "../../components/H1/H1"
 import P from "../../components/P/P"
+
 import { aboutPageTopText, aboutPageBottomText } from "../../utils/text";
+
 import topImg from './assets/images/topImg.svg'
 import bottomImg from './assets/images/bottomImg.svg'
+
 import styles from "./About.module.scss"
 const About = () => {
     return (

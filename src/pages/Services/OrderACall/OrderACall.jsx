@@ -1,11 +1,15 @@
-import { useState } from "react"
 import Button from "../../../components/Button/Button"
 import H1 from "../../../components/H1/H1"
 import Input from "../../../components/Input/Input"
-import styles from './orderACall.module.scss'
-import close from '../../../components/Modal/assets/icons/close.svg'
-import { Context } from "../../../App"
+
+import { useState } from "react"
 import { useContext } from "react"
+import { Context } from "../../../App"
+
+import close from '../../../components/Modal/assets/icons/close.svg'
+
+import styles from './orderACall.module.scss'
+
 const OrderACall = () => {
     const { toggleModal, toggleOrderACall } = useContext(Context)
     const [user, setUser] = useState({

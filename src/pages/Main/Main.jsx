@@ -1,17 +1,21 @@
+import Section2 from '../../components/Section2/Section2';
+import Section3 from '../../components/Section3/Section3';
+import Section4 from '../../components/Section4/Section4';
+import Section5 from '../../components/Section5/Section5';
+
 import Section from '../../components/Section/Section';
 import fridge from './assets/images/section3img.svg'
 import fabrika from './assets/images/fabrika.svg'
 import eclipse from './assets/images/eclipse.png'
+
 import {
   topButtonText,
   topSectionP,
   topSectionH1,
   section3P, section3H1, section3ButtonText
 } from "../../utils/text";
-import Section2 from '../../components/Section2/Section2';
-import Section3 from '../../components/Section3/Section3';
-import Section4 from '../../components/Section4/Section4';
-import Section5 from '../../components/Section5/Section5';
+
+
 import { useNavigate } from 'react-router-dom';
 import { Context } from '../../App';
 import { useContext } from 'react';

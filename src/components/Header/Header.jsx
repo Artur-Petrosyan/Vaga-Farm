@@ -1,6 +1,9 @@
-import Logo from '../../assets/icons/logo.svg';
-import { NavLink } from 'react-router-dom';
 import NavBar from './Navigation/Navigation';
+
+import Logo from '../../assets/icons/logo.svg';
+
+import { NavLink } from 'react-router-dom';
+
 import styles from './Header.module.scss'
 const Header = () => {
     return (

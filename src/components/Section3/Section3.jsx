@@ -1,5 +1,6 @@
-import { useNavigate } from "react-router-dom";
 import Section from "../Section/Section"
+
+import { useNavigate } from "react-router-dom";
 
 const Section3 = ({ h1, p, button, img, eclipse }) => {
     const navigate = useNavigate()

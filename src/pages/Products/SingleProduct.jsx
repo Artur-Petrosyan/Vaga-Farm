@@ -1,11 +1,18 @@
-import { useParams } from "react-router-dom"
-import { allStoreItems } from "../../utils/allStoreItems"
-import styles from "./SingleProduct.module.scss"
-import H1 from '../../components/H1/H1'
 import P from "../../components/P/P"
+import H1 from '../../components/H1/H1'
+
+import { useParams } from "react-router-dom"
+
+import { allStoreItems } from "../../utils/allStoreItems"
+
+import styles from "./SingleProduct.module.scss"
+
 const SingleProduct = () => {
+
   const params = useParams()
+
   const singleItem = allStoreItems().filter((item) => Number(params.id) === item.id)
+  
   return (
     <div className="container">
       {singleItem.map((item) => {

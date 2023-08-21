@@ -1,8 +1,11 @@
 import Input from '../Input/Input'
 import Button from '../Button/Button'
-import { useState } from 'react'
-import styles from "./Form.module.scss"
 import H1 from '../H1/H1'
+
+import { useState } from 'react'
+
+import styles from "./Form.module.scss"
+
 const Form = ({ h1, toggleModal }) => {
     const [user, setUser] = useState({
         name: '',
