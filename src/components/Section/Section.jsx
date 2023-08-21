@@ -3,14 +3,11 @@ import H1 from '../H1/H1'
 import P from '../P/P'
 import Button from '../Button/Button'
 import classNames from "classnames/bind"
-import { useNavigate } from "react-router-dom"
 const cx = classNames.bind(styles)
-const Section = ({ h1, p, button, img, eclipse, reverse,toggleModal,onClick }) => {
-    const navigate = useNavigate()
-
+const Section = ({ h1, p, button, img, eclipse, reverse, onClick }) => {
     return (
         <section className={styles.container}>
-            <div className={cx('content',{reverse : reverse })} >
+            <div className={cx('content', { reverse: reverse })} >
                 <div className={styles.left_part}>
                     <H1>
                         {h1}
@@ -18,7 +15,7 @@ const Section = ({ h1, p, button, img, eclipse, reverse,toggleModal,onClick }) =
                     <P variant={'default'}>
                         {p}
                     </P>
-                    <Button variant={'primary'} onClick={() => navigate('/about')} >
+                    <Button variant={'primary'} onClick={onClick} >
                         {button}
                     </Button>
                 </div>

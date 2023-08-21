@@ -13,6 +13,11 @@ $fontSize : '18px';
     border-radius: 14px;
 }
 
+.disabled {
+    @include btnPrimary(#12724F, #FFFFFF, 25px 37px 25px 37px, 18px);
+    opacity: 0.5;
+}
+
 .primary {
     @include btnPrimary(#12724F, #FFFFFF, 25px 37px 25px 37px, 18px);
 }

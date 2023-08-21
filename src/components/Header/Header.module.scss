@@ -1,9 +1,19 @@
-$padding : 0 75px 0 75px;
+$padding :20px 75px 20px 75px;
 
 .header {
-    height: 78px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: $padding;
+
+    .logo {
+        min-width: 150px;
+        margin-bottom: 10px;
+    }
+}
+@media  (max-width : 1440px) {
+ .logo{
+    margin-right : 10px;
+ }   
 }

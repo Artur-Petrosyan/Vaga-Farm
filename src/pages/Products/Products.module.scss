@@ -20,6 +20,11 @@ $pending : #000000;
     .li {
         margin-right: 15px;
         cursor: pointer;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    
     }
 }
 

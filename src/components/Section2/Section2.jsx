@@ -23,7 +23,7 @@ const navigate = useNavigate()
                     </H1>
                 </div>
                 <div className={styles.cards}>
-                    {data.map((item) =>
+                {data.map((item) =>
                         <Card
                             key={item.id}
                             id={item.id}    
@@ -34,6 +34,7 @@ const navigate = useNavigate()
                             sizes={item.sizes}
                             layers={item.layers}
                             pcs={item.pcs}
+                            onClick={() => navigate(`products/${item.id}`)}
                         />
                     )}
                 </div>

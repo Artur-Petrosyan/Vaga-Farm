@@ -6,7 +6,7 @@ import Card from '../../components/Card/Card'
 import FiltredProducts from './SingleProduct'
 import { useNavigate } from 'react-router-dom'
 const Products = () => {
-    const [categoryName, setCategoryName] = useState('Բինտեր')
+    const [categoryName, setCategoryName] = useState('ԲԻՆՏԵՐ')
     const [storeItems, setStoreItems] = useState([])
     const filtredProduct = storeItems.filter((item) => item.name === categoryName)
     console.log(filtredProduct);
@@ -45,9 +45,8 @@ const Products = () => {
                             })}
                         </ul>
                         <div className={styles.store_cards}>
-                            {filtredProduct.map((item) =>
-                             <div onClick={() => navigate(`${item.id}`)}>
-                                   <Card
+                        {filtredProduct.map((item) =>
+                                <Card
                                     image={item.image}
                                     text={item.text}
                                     arrowTopImg={item.arrowTopImg}
@@ -56,7 +55,8 @@ const Products = () => {
                                     layers={item.layers}
                                     pcs={item.pcs}
                                     key={item.id}
-                                /></div>)}
+                                    onClick={() => navigate(`${item.name}/${item.id}`)}
+                                />)}
                              
                         </div>
                     </div>

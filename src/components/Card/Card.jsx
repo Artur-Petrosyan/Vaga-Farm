@@ -11,7 +11,8 @@ const Card = memo(({
     sizes,
     layers,
     pcs,
-    partners
+    partners,
+    onClick
 }) => {
     return (
         image && text && arrowLeftRight && arrowTopImg && sizes && layers && pcs
@@ -53,7 +54,7 @@ const Card = memo(({
                 </div>
 
                 <div className={styles.card_button}>
-                    <Button variant={'secondary'} >
+                    <Button variant={'secondary'} onClick={onClick}>
                         ՏԵՍՆԵԼ ԱվԵԼԻՆ
                     </Button>
                 </div>

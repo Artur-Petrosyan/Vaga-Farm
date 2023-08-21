@@ -12,10 +12,13 @@ import Section2 from '../../components/Section2/Section2';
 import Section3 from '../../components/Section3/Section3';
 import Section4 from '../../components/Section4/Section4';
 import Section5 from '../../components/Section5/Section5';
+import { useNavigate } from 'react-router-dom';
+import { Context } from '../../App';
+import { useContext } from 'react';
 
-
-
-function Main({ toggleModal }) {
+function Main({ }) {
+  const navigate = useNavigate()
+  const { toggleModal } = useContext(Context)
   return (
     <main>
       <Section
@@ -25,6 +28,9 @@ function Main({ toggleModal }) {
         img={fabrika}
         eclipse={eclipse}
         toggleModal={toggleModal}
+        onClick={() =>
+          navigate('/about')
+        }
       />
       <Section2 />
       <Section3
@@ -35,7 +41,7 @@ function Main({ toggleModal }) {
         eclipse={eclipse}
       />
       <Section4 />
-      <Section5 toggleModal={toggleModal}/>
+      <Section5 />
     </main>
   );
 }
